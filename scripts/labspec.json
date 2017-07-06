@@ -11,8 +11,8 @@
                     "status": []
                 }, 
                 "installer": [], 
-                "os": "ubuntu", 
-                "osVersion": "12", 
+                "os": "centos", 
+                "osVersion": "6", 
                 "service_pack": ""
             }
         }, 
@@ -129,8 +129,8 @@
                     "max_required": "2gb", 
                     "min_required": "256mb"
                 }, 
-                "os": "ubuntu", 
-                "osVersion": "12", 
+                "os": "centos", 
+                "osVersion": "6", 
                 "servicepack": "", 
                 "storage": {
                     "min_required": "10gb"
