@@ -108,20 +108,20 @@
             "platform": {
                 "arch": "i386", 
                 "hosting": "dedicated", 
-                "installer": ["sudo apt-get update",
-                "sudo apt-get install -y php5 apache2"], 
+                "installer": ["sudo yum update -y",
+                "sudo yum install -y php5 httpd"], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 
-                    "init": ["mv /var/www/index.html index.html.default",
-                        "cp -r ../build/* /var/www/"
+                    "init": ["mv /var/www/html/index.html index.html.default",
+                        "cp -r ../build/* /var/www/html"
                         ], 
                     "pause": [], 
                     "publish": [], 
                     "restore": [], 
                     "resume": [], 
-                    "shutdown": ["service apache2 stop"], 
-                    "start": ["service apache2 start"],  
+                    "shutdown": ["service httpd stop"], 
+                    "start": ["service httpd start"],  
                     "stats": [], 
                     "stop": []
                 }, 
